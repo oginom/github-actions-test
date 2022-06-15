@@ -1,0 +1,15 @@
+name: Reusable Vonjour
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
+
+jobs:
+  Vonjour-Job:
+    name: say voujour
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Vonjour, ${{ inputs.name }}!"
