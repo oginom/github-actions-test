@@ -8,6 +8,6 @@ jobs:
     steps:
       - run: echo "Hello! Triggered by a ${{ github.event_name }} event."
   Vonjour-GitHub-Actions:
-    uses: oginom/github-actions-test/.github/workflows/vonjour_reuse@main
+    uses: oginom/github-actions-test/.github/workflows/vonjour_reuse.yml@main
     with:
       name: Oginom
