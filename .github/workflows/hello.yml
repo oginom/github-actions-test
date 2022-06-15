@@ -9,7 +9,7 @@ jobs:
       - run: echo "Hello! Triggered by a ${{ github.event_name }} event."
       - run: echo "Hello, ${{ secrets.SECRET_NAME }}."
       - run: echo "Hello, str contains ll."
-        if: contains(secret_str, "ll")
+        if: ${{ contains(secret_str, "ll") }}
         with:
           secret_str: ${{ secrets.SECRET_STR }}
   Vonjour-GitHub-Actions:
