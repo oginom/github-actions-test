@@ -1,0 +1,7 @@
+name: Hello on Push
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello! Triggered by a ${{ github.event_name }} event."
