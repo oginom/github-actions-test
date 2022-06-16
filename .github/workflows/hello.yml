@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ github.token }}
+          token: ''
       - run: echo "Hello! Triggered by a ${{ github.event_name }} event."
       - run: echo "Hello, ${{ secrets.SECRET_NAME }}."
       - run: echo "Hello, ${{ secrets.SECRET_NANA || github.token }}."
