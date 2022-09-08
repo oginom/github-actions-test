@@ -1,6 +1,11 @@
 name: Hello on Push
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    branches:
+      - sub
 
 jobs:
   Hello-GitHub-Actions:
