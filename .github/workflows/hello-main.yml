@@ -7,4 +7,4 @@ on:
 
 jobs:
   Hello-GitHub-Actions:
-    uses: workflows/hello.yml@develop
+    uses: workflows/hello.yml@main
