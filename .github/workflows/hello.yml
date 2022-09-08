@@ -1,7 +1,7 @@
 name: Hello on Push
 
 on:
-  pull_request:
+  workflow_call:
 
 jobs:
   Hello-GitHub-Actions:
