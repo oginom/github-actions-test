@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - sub
+    paths:
+      - README.md
 
 jobs:
   Hello-GitHub-Actions:
-    uses: oginom/github-actions-test/.github/workflows/hello.yml@main
+    uses: workflows/hello.yml
 
