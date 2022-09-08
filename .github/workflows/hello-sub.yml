@@ -1,0 +1,11 @@
+name: Hello on Push Sub
+
+on:
+  push:
+    branches:
+      - sub
+
+jobs:
+  Hello-GitHub-Actions:
+    uses: oginom/github-actions-test/.github/workflows/hello.yml@main
+

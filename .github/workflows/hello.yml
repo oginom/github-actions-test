@@ -1,12 +1,7 @@
 name: Hello on Push
 
 on:
-  push:
-    branches:
-      - main
-  push:
-    branches:
-      - sub
+  pull_request:
 
 jobs:
   Hello-GitHub-Actions:
